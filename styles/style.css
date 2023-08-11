@@ -20,7 +20,7 @@ body {
 .card__section {
   font-family: var(--text-font-family);
   font-size: var(--font-size);
-  padding: 2em;
+  padding: 3em;
 }
 
 .card__section__h2 {
@@ -32,8 +32,9 @@ body {
 
 .card__section__p {
   color: var(--paragraphs-color);
-  margin-bottom: 2em;
+  font-size: 0.8em;
   line-height: 2rem;
+  margin-bottom: 2em;
 }
 
 .sedans {
@@ -94,7 +95,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .card {
     max-width: 60%;
   }
