@@ -1,0 +1,12 @@
+:root {
+  --body-bg-color: hsl(0, 0%, 95%);
+  --sedans-bg-color: hsl(31, 77%, 52%);
+  --suvs-bg-color: hsl(184, 100%, 22%);
+  --luxury-bg-color: hsl(179, 100%, 13%);
+  --paragraphs-color: hsla(0, 0%, 100%, 0.75);
+  --headings-font-family: "Big Shoulders Display", cursive;
+  --headings-color: hsl(0, 0%, 95%);
+  --btns-bg-color: hsl(0, 0%, 95%);
+  --text-font-family: "Lexend Deca", sans-serif;
+  --font-size: 1.06rem;
+}

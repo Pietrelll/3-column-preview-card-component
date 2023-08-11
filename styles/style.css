@@ -1,0 +1,109 @@
+@import url(variables.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  margin: auto;
+  height: 100vh;
+}
+
+.card {
+  margin: 5em auto 5em auto;
+  max-width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__section {
+  font-family: var(--text-font-family);
+  font-size: var(--font-size);
+  padding: 2em;
+}
+
+.card__section__h2 {
+  font-family: var(--headings-font-family);
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--headings-color);
+}
+
+.card__section__p {
+  color: var(--paragraphs-color);
+  margin-bottom: 2em;
+  line-height: 2rem;
+}
+
+.sedans {
+  background-color: var(--sedans-bg-color);
+}
+
+.suvs {
+  background-color: var(--suvs-bg-color);
+}
+
+.luxury {
+  background-color: var(--luxury-bg-color);
+}
+
+.learn-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  max-width: 15ch;
+  margin: 1em;
+  text-decoration: none;
+  background-color: var(--btns-bg-color);
+  border-radius: 30px;
+}
+
+.sedans-btn {
+  color: var(--sedans-bg-color);
+}
+
+.suvs-btn {
+  color: var(--suvs-bg-color);
+}
+
+.luxury-btn {
+  color: var(--luxury-bg-color);
+}
+
+.learn-more-btn:is(:hover, :focus) {
+  border: 2px solid var(--btns-bg-color);
+  background: none;
+  color: var(--paragraphs-color);
+}
+
+@media (min-width: 800px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .card__section__h2 {
+    font-size: 2.3rem;
+  }
+
+  .card__section__p {
+    height: 20ch;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    max-width: 60%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
